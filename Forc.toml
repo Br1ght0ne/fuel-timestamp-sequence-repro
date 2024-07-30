@@ -1,0 +1,7 @@
+[project]
+authors = ["Oleksii Filonenko"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "timestamp-repro"
+
+[dependencies]

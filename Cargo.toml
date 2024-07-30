@@ -1,0 +1,19 @@
+[package]
+name = "timestamp-repro"
+description = "Bug: calling a contract from different accounts gives non-sequential timestamps"
+version = "0.1.0"
+edition = "2021"
+authors = ["Oleksii Filonenko <12615679+Br1ght0ne@users.noreply.github.com>"]
+license = "Apache-2.0"
+
+[dev-dependencies]
+fuels = { version = "0.65.1", features = ["fuel-core-lib"] }
+tokio = { version = "1.12", features = ["rt", "macros"] }
+
+[[test]]
+harness = true
+name = "integration_tests"
+path = "tests/harness.rs"
+
+[dependencies]
+fuels = "0.65.1"
